@@ -4,7 +4,7 @@ title: Privacy Policy — Sentinel
 ---
 <h1>Sentinel Privacy Policy</h1>
 
-<p>Last updated: <strong>6 August 2026</strong></p>
+<p>Last updated: <strong>[publish date — set on launch day]</strong></p>
 
 <p>Sentinel uses your location to power core safety features like SOS, zone detection, and hiker check-ins. This policy explains exactly what we collect, why, and how you can control it. We do not sell your personal information.</p>
 
@@ -40,8 +40,8 @@ title: Privacy Policy — Sentinel
 
 <h3>2.1 Information You Provide Directly</h3>
 <ul>
-<li><strong>Account information</strong>: name, email address, password (encrypted), and profile details you choose to add.</li>
-<li><strong>Content you create</strong>: hunt logs, sightings, photos, notes, game log entries, zone boundaries, waypoints, trip plans, and messages sent to AI features (such as Sentinel Companion).</li>
+<li><strong>Account information</strong>: email address, password (encrypted), a nickname, and any profile details you choose to add. Your nickname is shown to other Sentinel users in safety alerts, for example if you send an SOS or your hunt block or route overlaps theirs. Use a nickname you are comfortable with others seeing; it does not need to be your real name.</li>
+<li><strong>Content you create</strong>: hunt logs, sightings, kill records, hazard reports, field journal notes and photos, zone boundaries, waypoints, trip plans, and messages sent to AI features (such as Sentinel Companion).</li>
 <li><strong>Communications</strong>: feedback, support requests, and survey responses you send us.</li>
 <li><strong>Payment information</strong>: when you purchase a subscription or in-app item, payment is processed by Apple App Store, Google Play, or RevenueCat. We do not directly collect or store your full payment card details; we receive confirmation of purchase and entitlement status only.</li>
 </ul>
@@ -52,19 +52,35 @@ title: Privacy Policy — Sentinel
 <ul>
 <li><strong>Precise location (GPS)</strong>: We collect your precise real-time location when you use mapping, tracking, zone detection, hiker check-in, SOS, and related features. This may be collected while the App is in use, and — if you grant "Always Allow" / background location permission — while the App is running in the background, in order to support continuous tracking, SOS alerts, and proximity warnings (such as hiker-route-to-hunt-zone warnings) even when the App is not actively open.</li>
 <li><strong>Recorded tracks and waypoints</strong>: routes, hunt zones, walking tracks, and waypoints you record or draw are stored against your account.</li>
+<li><strong>Sightings</strong>: when you log an animal sighting, its precise location is sent to our server, which blurs (fuzzes) it before it is stored. Other users may see that a species has been sighted in a general area. They never see who reported it or the exact spot.</li>
+<li><strong>Hazard reports</strong>: hazards you report are shown to other users on the map, without your name or nickname.</li>
+<li><strong>Weather and UV</strong>: to provide forecasts, your approximate location (rounded to an area of about 10 km) is sent to our server, which fetches and caches weather for that area. Our weather provider receives the area, not your identity.</li>
+<li><strong>Aggregated activity maps</strong>: some maps (such as hiker activity heatmaps) are built from many users' data combined. An area is only shown when at least three different users have activity there, so no individual can be identified.</li>
 </ul>
 
 <p>We do not currently derive approximate location from your IP address or network information for any purpose.</p>
 
 <p>You can control location permissions at any time through your device's operating system settings (iOS Settings &gt; Privacy &gt; Location Services; Android Settings &gt; Apps &gt; Permissions &gt; Location). Disabling location access will prevent core safety features — including SOS, zone detection, hiker check-in, and live tracking — from functioning correctly. We do not recommend disabling location access while you are out in the field, as this may compromise your safety.</p>
 
-<p><strong>Sharing location with other people.</strong> Certain features (such as hiker check-in, SOS, and party/"Where's My Mate" location sharing) are designed to share your location with emergency contacts or party members you nominate, or with Sentinel's systems for the purpose of alerting others if you do not check in as expected or if you or an overlapping hunter/hiker trigger an SOS. We do not make your live location publicly visible to other app users by default.</p>
+<p><strong>Sharing location with other people.</strong> Some safety features share your location with other people by design:</p>
+<ul>
+<li><strong>SOS</strong>: other Sentinel users whose active hunt block or hiking route is within about 5 km of your SOS location receive your nickname and your location (as a grid reference and on the map), so they can call 111 for you. Your emergency contacts receive your location by SMS if you choose to send it.</li>
+<li><strong>Hiker check-ins</strong>: while you are checked in on a route, hunters nearby may see your route on their map so they know people are in the area.</li>
+<li><strong>Hunt block and route overlaps</strong>: when your hunt block or hiking route overlaps another user's, both of you are warned. You each see the other's nickname (never your real name), the overlapping hunt block or route on the map, and the relevant dates and times; for a hunt block you also see its hunt type and party size. A hunter viewing their block sees that a hiker is checked in through it, along with the hiker's nickname and check-in times.</li>
+<li><strong>Party / "Where's My Mate"</strong>: party members you invite can see your location while sharing is on.</li>
+</ul>
+<p>We do not make your live location publicly visible to other app users outside these features.</p>
 
 <p><strong>Community and research location data — not yet active.</strong> Sentinel includes a "Contribute to Research" setting (see Section 4.3) that will, in future, share aggregated or de-identified sighting and activity data with conservation research bodies. As of the date of this Policy, this feature has not been activated: no data is currently being transmitted to any external research or government body, regardless of your setting. We will update this Policy before any such sharing begins.</p>
 
 <h3>2.3 Photos, Camera, and Media</h3>
 
-<p>If you use Species ID, Field Journal, or photo attachment features, we access your camera and/or photo library to allow you to capture or upload images (for example, of game animals, sightings, or gear). Photos you submit for AI species identification may be processed by our AI service provider as described in Section 5.</p>
+<p>If you use Species ID, sightings, kill records or the Field Journal, we access your camera and, where you choose, your photo library.</p>
+<ul>
+<li><strong>Species identification and verification photos</strong> (sightings, kills and Species ID) are sent to our AI provider, Anthropic, to identify the animal and check the photo is genuine (for example, not a photo of a screen or print). Before sending, the App removes location and other metadata from the photo and reduces its size. <strong>These photos are not stored on our servers.</strong> We keep only the result, such as the species identified and a confidence level.</li>
+<li><strong>Saving to your gallery</strong>: photos taken with the App's camera for sightings and kills are saved to your device's photo gallery once the record is saved, so you keep a copy. The first time, the App asks for permission to add photos. On iOS this is add-only access. On Android 13 and newer no permission is needed. On Android 12 and older, the system storage permission required to save photos also allows reading your photo library; the App does not read or upload photos from your library except ones you choose. If you decline, your record still saves without a gallery copy.</li>
+<li><strong>Field Journal photos</strong> you choose to save are stored in your account and can only be viewed by you.</li>
+</ul>
 
 <h3>2.4 Device, Usage, and Diagnostic Information</h3>
 <ul>
@@ -93,9 +109,9 @@ title: Privacy Policy — Sentinel
 <h3>2.7 Information from Third Parties</h3>
 <ul>
 <li><strong>DOC (Department of Conservation) and Fish &amp; Game NZ data</strong>: publicly available track, zone, and hunting information we incorporate into the App is not personal information about you, but your interactions with it (e.g., favourites, visited tracks) are linked to your account.</li>
-<li><strong>LINZ (Land Information New Zealand)</strong>: property boundary and topographic data used for map overlays; this is not personal information about you.</li>
-<li><strong>Weather and environmental data providers</strong> (such as NIWA and OpenWeatherMap): used to provide forecasts and conditions; not linked to your identity.</li>
-<li><strong>Google Maps</strong>: map tiles and mapping services displayed in the App are provided by Google; see Section 4.1 and Section 12.2.</li>
+<li><strong>LINZ (Toitū Te Whenua Land Information New Zealand)</strong>: topographic maps, offline map downloads, aerial imagery, elevation and property boundary data, and tide predictions (bundled in the App and used offline). Map and elevation data are fetched for the areas you view; this is not personal information about you.</li>
+<li><strong>Weather providers (OpenWeather)</strong>: forecasts, weather alerts, UV and the rain map layer, fetched through our servers as described in Section 2.2; not linked to your identity.</li>
+<li><strong>Google Maps (Android) and Apple Maps (iOS)</strong>: map display and mapping services; see Section 4.1 and Section 12.</li>
 </ul>
 
 <h2 id="s3">3. How We Use Your Information</h2>
@@ -105,6 +121,8 @@ title: Privacy Policy — Sentinel
 <li>Provide core App functionality: mapping, zone detection, tracking, SOS alerts, hiker check-ins, and safety notifications.</li>
 <li>Operate AI-powered features (Sentinel Companion, Hunt Report, Safety Assessment, Hunt Debrief, Gear Recommender, Trip Planner, and Species ID), as described in Section 5.</li>
 <li>Maintain your account, process subscriptions and purchases, and manage the in-app credit system.</li>
+<li>Verify sightings, kills and hikes, and award in-app credits and Pro time for them.</li>
+<li>Prevent abuse, such as rate-limiting requests and reversing credits from refunded purchases.</li>
 <li>Award badges, track milestones, and manage gamified features.</li>
 <li>Improve, troubleshoot, and secure the App, including crash reporting.</li>
 <li>Display non-personalized advertising to free-tier users, as described in Section 2.6.</li>
@@ -128,7 +146,10 @@ title: Privacy Policy — Sentinel
 <li><strong>Apple App Store / Google Play</strong> (app distribution and payment processing)</li>
 <li><strong>Sentry</strong> (crash reporting and error diagnostics)</li>
 <li><strong>Google AdMob</strong> (non-personalized advertising for free-tier users)</li>
-<li><strong>Google Maps</strong> (map tiles and mapping services)</li>
+<li><strong>Google Maps</strong> (map display on Android)</li>
+<li><strong>Apple Maps</strong> (map display on iOS)</li>
+<li><strong>OpenWeather</strong> (weather, UV and rain-map data, via our servers)</li>
+<li><strong>LINZ</strong> (map tiles, offline maps and elevation data)</li>
 <li><strong>Resend</strong> (transactional email, such as password resets)</li>
 <li><strong>Expo / push notification services</strong> (delivering notifications)</li>
 </ul>
@@ -137,7 +158,7 @@ title: Privacy Policy — Sentinel
 
 <h3>4.2 Emergency Contacts and Safety Features</h3>
 
-<p>If you use SOS or hiker check-in features, we share relevant location and status information with the emergency contacts you designate, and with other hunters or hikers whose active hunt zone or route genuinely overlaps with an SOS trigger location, so they can assist if nearby. We may also share information with emergency services if reasonably necessary to protect your life or safety or that of others.</p>
+<p>If you use SOS, hiker check-in or hunt block features, we share relevant information with other people as described in Section 2.2 ("Sharing location with other people"): SOS alerts go to users within about 5 km whose active block or route is near you, and to emergency contacts you choose to message; hiker routes and overlapping hunt blocks are shown to the users they affect. We may also share information with emergency services if reasonably necessary to protect your life or safety or that of others.</p>
 
 <h3>4.3 Research and Government Partners — Not Yet Active</h3>
 
@@ -157,11 +178,12 @@ title: Privacy Policy — Sentinel
 
 <p>Sentinel provides several AI-assisted features (Sentinel Companion, Hunt Report, Safety Assessment, Hunt Debrief, Gear Recommender, Trip Planner, and Species ID). To provide these features:</p>
 <ul>
+<li>We ask for your consent before you first use an AI feature, and only send your information to Anthropic once you have agreed. If you decline, the rest of the App keeps working, but features that rely on AI — including photo verification for sightings — will not run, so sightings cannot be verified or earn free Sentinel Pro time. You can withdraw your consent at any time in Profile &gt; Privacy settings, which stops AI features until you allow them again.</li>
 <li>Relevant information you provide (such as chat messages, hunt details, location and weather context, or photos for species identification) is sent to our AI infrastructure provider, Anthropic, for processing.</li>
 <li>We do not use your individual, identifiable conversations or submissions to train Anthropic's underlying AI models, and our agreements with Anthropic restrict the use of API data for that purpose.</li>
 <li><strong>Sentinel Companion conversations are not stored</strong> on our servers once a session ends; each conversation is processed and relayed without being saved.</li>
 <li><strong>Generated Hunt Reports, Safety Assessments, and Gear Recommendations are cached</strong> for efficiency and to avoid redundant processing, linked to the relevant zone, track, or query. These cached outputs are automatically deleted after 90 days — see Section 6.</li>
-<li>AI features that involve photo submission (Species ID) only process images you actively choose to submit for that purpose.</li>
+<li>Photos for species identification and verification are only sent when you take or choose them for that purpose. Location metadata is removed first, and the photos are not stored on our servers (see Section 2.3).</li>
 <li>AI outputs are generated by a machine-learning model and may occasionally be inaccurate or incomplete. AI-generated safety assessments, hunt debriefs, gear recommendations, and trip plans are provided for informational purposes only and should not be relied upon as a substitute for your own judgment, official safety advice, or emergency services.</li>
 </ul>
 
@@ -173,6 +195,9 @@ title: Privacy Policy — Sentinel
 <li><strong>Location tracks, zones, waypoints, and health data (heart rate/steps) attached to them</strong>: retained until you delete them or delete your account, unless retention is required for safety, legal, or dispute-resolution purposes.</li>
 <li><strong>Sentinel Companion conversations</strong>: not stored server-side at all — see Section 5.</li>
 <li><strong>Cached AI outputs</strong> (Hunt Reports, Safety Assessments, Gear Recommendations): automatically deleted after 90 days.</li>
+<li><strong>Species ID, sighting and kill photos</strong>: not stored on our servers. Only the identification result is kept, with the record it belongs to.</li>
+<li><strong>Field Journal photos</strong>: retained until you delete them or your account.</li>
+<li><strong>Weather and UV cache</strong>: stored by area only, not linked to you, and replaced as forecasts refresh.</li>
 <li><strong>Crash and error diagnostics (Sentry)</strong>: retained for approximately 30 days.</li>
 <li><strong>Research data</strong>: not currently collected — see Section 4.3.</li>
 </ul>
@@ -181,7 +206,7 @@ title: Privacy Policy — Sentinel
 
 <h2 id="s7">7. Data Security</h2>
 
-<p>We use reasonable administrative, technical, and physical safeguards to protect your information, including encryption in transit, database-level access controls, and row-level security on our backend (Supabase/PostgreSQL) — meaning your location tracks, health data, and other personal records are scoped so that only your own account can read or modify them. Biometric authentication, where enabled, never leaves your device. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
+<p>We use reasonable administrative, technical, and physical safeguards to protect your information, including encryption in transit, database-level access controls, and row-level security on our backend (Supabase/PostgreSQL) — meaning your location tracks, health data, photos and other personal records are scoped so that only your own account can read or modify them, except where a safety feature is designed to share specific information with other users (see Section 2.2). Biometric authentication, where enabled, never leaves your device. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
 <p>If we become aware of a privacy or security breach that has caused, or is likely to cause, serious harm, we will notify affected individuals and the New Zealand Office of the Privacy Commissioner in accordance with the Privacy Act 2020, and will notify other regulators or individuals as required by applicable law (including GDPR's 72-hour breach notification requirement where relevant).</p>
 
@@ -222,7 +247,7 @@ title: Privacy Policy — Sentinel
 
 <h3>12.1 Apple App Store</h3>
 
-<p>In accordance with Apple's App Privacy requirements, our App Privacy "nutrition label" in the App Store discloses the categories of data collected (including location, contact info, identifiers, usage data, diagnostics, and user content) and whether that data is linked to your identity or used for tracking. Sentinel does not use data for cross-app/cross-website tracking as defined by Apple's App Tracking Transparency framework, and accordingly does not require ATT consent for that purpose. Permissions requested (such as location "Always" and "While Using," camera, photo library, and notifications) are used solely for the purposes described in this Policy.</p>
+<p>In accordance with Apple's App Privacy requirements, our App Privacy "nutrition label" in the App Store discloses the categories of data collected (including location, contact info, identifiers, usage data, diagnostics, and user content) and whether that data is linked to your identity or used for tracking. Sentinel does not use data for cross-app/cross-website tracking as defined by Apple's App Tracking Transparency framework, and accordingly does not require ATT consent for that purpose. Permissions requested (such as location "Always" and "While Using," camera, photo library (add-only, to save photos you take), and notifications) are used solely for the purposes described in this Policy.</p>
 
 <h3>12.2 Google Play</h3>
 
